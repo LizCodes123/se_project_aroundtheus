@@ -5,7 +5,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 It displays images of places around the U.S.
 
-Breakpoints: 900px, 600px
+Breakpoints: 900px, 768px, 600px
   
 Technologies used: HTML, CSS and Figma design brief (link below)
   
