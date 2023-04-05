@@ -9,16 +9,16 @@
     font-size: 18px;
     line-height: 1.2;
     color: #545454;
+    margin: 0;
 }
 
 @media screen and (max-width: 900px) {
-    .footer__copyright {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.2;
-        color: #545454;
+    .footer {
         padding: 48px 0 36px 0;
-        
     }
+
+    .footer__copyright {
+        font-size: 14px;
+    }
+
 }
