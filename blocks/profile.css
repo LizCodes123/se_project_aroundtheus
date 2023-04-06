@@ -71,6 +71,10 @@
   font-weight: 400;
   grid-area: description;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 373px;
 }
 
 @media screen and (max-width: 900px) {
@@ -101,6 +105,7 @@
     font-size: 22px;
     max-width: 196px;
     justify-self: center;
+    padding: 0;
   }
 
   .profile__description {
@@ -123,5 +128,6 @@
   .profile__edit-button {
     height: 18px;
     width: 18px;
+    margin-bottom: 14px;
   }
 }
