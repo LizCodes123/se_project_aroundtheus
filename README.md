@@ -7,7 +7,7 @@ It displays images of places around the U.S.
 
 Breakpoints: 900px, 768px, 600px
   
-Technologies used: HTML, CSS and Figma design brief (link below)
+Technologies used: HTML, CSS, Javascript and Figma design brief (link below)
   
 (https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
 
