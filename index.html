@@ -42,6 +42,7 @@
         <p class="footer__copyright">&copy; 2022 Around the U.S.</p>
       </footer>
     </div>
+    <!--Edit Profile Modal-->
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close" id="profile-modal-close-button"></button>
@@ -64,6 +65,33 @@
           </fieldset>
           <fieldset class="modal__form-fieldset">
             <button class="modal__form-button" type="submit">Save</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+<!--Add Button Modal-->
+    <div class="modal" id="add-card-modal">
+      <div class="modal__container">
+        <button class="modal__close" id="add-card-modal-close-button"></button>
+
+        <form class="modal__form" id="add-card-form">
+          <p class="modal__heading">New place</p>
+          <fieldset class="modal__form-fieldset">
+            <input
+              type="text"
+              class="modal__form-input"
+              id="add-card-title-input"
+              placeholder="Title"
+            />
+            <input
+              type="text"
+              class="modal__form-input"
+              id="add-card-image-url"
+              placeholder="Image link"
+            />
+          </fieldset>
+          <fieldset class="modal__form-fieldset">
+            <button class="modal__form-button" type="submit">Create</button>
           </fieldset>
         </form>
       </div>
