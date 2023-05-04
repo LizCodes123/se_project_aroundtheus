@@ -37,6 +37,7 @@ const profileCloseModalButton = document.querySelector(
 const addCardModalCloseButton = document.querySelector("#add-card-modal-close-button");
 
 
+
 const profileTitle = document.querySelector("#profile-title");
 const profileDescription = document.querySelector("#profile-description");
 const profileTitleInput = document.querySelector("#profile-title-input");
@@ -60,6 +61,20 @@ function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageElement = cardElement.querySelector(".card__image");
   const cardTitleElement = cardElement.querySelector(".card__title");
+  const likeButton = cardElement.querySelector(".card__like-button");
+  likeButton.addEventListener("click", () => {
+    likeButton.classList.toggle("card__like-button_active");
+  });
+  //5 - find delete button
+  //add event listener to the delete button
+  //cardElement.remove();
+
+  //6 - open picture modal
+  //add click listener to card image element
+  //openModal with previewImageModal
+
+
+
   cardTitleElement.textContent = data.name;
   cardImageElement.setAttribute("alt", data.name);
   cardImageElement.setAttribute("src", data.link);
@@ -108,3 +123,4 @@ addCardModalButton.addEventListener("click", () => openPopup(addCardModal));
 addCardModalCloseButton.addEventListener("click", () => closePopup(addCardModal));
 
 initialCards.forEach((data) => renderCard(data, cardListElement));
+
