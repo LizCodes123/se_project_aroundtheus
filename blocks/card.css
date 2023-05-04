@@ -55,13 +55,17 @@
 
 .card__delete-icon {
   position: absolute;
-  background: url(../images/Trash.svg);
+  background: url(../images/delete-icon.svg) no-repeat center;
   background-size: contain;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   width: 18px;
   height: 19px;
   top: 18px;
   right: 15px;
-  opacity: 1;
+}
 
-
+.card__delete-icon:hover {
+  opacity: 0.6;
 }

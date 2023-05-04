@@ -98,6 +98,30 @@
   opacity: 0.8;
 }
 
+.modal__container_type_preview {
+  padding: 0;
+  max-width: 75vh;
+  max-height: 75vh;
+  display: flex;
+  width: auto;
+  background: none;
+}
+
+.modal__preview-image {
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.modal__preview-caption {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 10px);
+  font-style: regular;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media screen and (max-width: 630px) {
   .modal__container {
     width: 282px;
