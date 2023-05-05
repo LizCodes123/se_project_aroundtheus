@@ -123,12 +123,18 @@ function handleAddCardFormSubmit(e) {
   const name = addCardTitleInput.value;
   const link = addCardImageInput.value;
   renderCard({ name, link }, cardListElement);
+  e.target.reset();
   closePopup(addCardModal);
 }
 
 /* EVENT LISTENERS */
 
-profileEditButton.addEventListener("click", () => openPopup(profileEditModal));
+profileEditButton.addEventListener("click", () => {
+  profileTitleInput.value = profileTitle.textContent.trim();
+  profileDescriptionInput.value = profileDescription.textContent.trim();
+  openPopup(profileEditModal);
+});
+
 profileCloseModalButton.addEventListener("click", () =>
   closePopup(profileEditModal)
 );
